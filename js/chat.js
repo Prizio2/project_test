@@ -48,4 +48,10 @@ $(function() {
     };
 
     // 通过回车键发送消息
+    $(".input_txt").on("keyup", function(e) {
+        // console.log(e.keyCode);
+        if (e.keyCode === 13) {
+            $(".input_sub").click();
+        }
+    });
 })
